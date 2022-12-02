@@ -1,0 +1,136 @@
+{
+    "code": 0,
+    "costMillis": 3,
+    "requestId": "9B84DD96F117",
+    "responseHost": "eservice-upsell-67fdc5d787-nszt9",
+    "msg": {
+        "desc": "Success",
+        "value": null
+    },
+    "data": {
+        "machineInfo": {
+            "buildDate": "2019-01-24",
+            "model": "S5H300",
+            "product": "20LTS5H300",
+            "productName": "NoteBook TP L480 8G 1TB W10P",
+            "serial": "PG01GTB2",
+            "status": "SH",
+            "type": "20LT",
+            "imei": "",
+            "popDate": "",
+            "swapImei": "",
+            "shipToCountry": "IN",
+            "shipDate": "2019-01-27",
+            "brand": "TPG",
+            "series": "THINKPAD-L-SERIES-LAPTOPS",
+            "group": "LAPTOPS-AND-NETBOOKS",
+            "productImage": "https://download.lenovo.com/images/ProdImageLaptops/l460.jpg",
+            "baseStartDate": "2019-01-30",
+            "eosDate": "2024-09-06",
+            "maxDuration": 60,
+            "tablet": false
+        },
+        "baseWarranties": [
+            {
+                "sdf": "36Y",
+                "type": "BASE",
+                "category": "MACHINE",
+                "deliveryType": "ONSITE",
+                "deliveryTypeName": "ONSITE, ONSITE",
+                "duration": 36,
+                "name": "3Y On-site, 9X5",
+                "description": "This product has a three year limited warranty and is entitled to parts, labor and on-site repair service. Service is available Monday-Friday, except holidays. Many parts can also be delivered to you using the Customer Replaceable Unit (CRU) method.",
+                "startDate": "2019-01-30",
+                "endDate": "2022-01-29",
+                "level": "BETTER"
+            },
+            {
+                "sdf": "1YOBAT",
+                "type": "BASE",
+                "category": "COMPONENT",
+                "deliveryType": "ONSITE",
+                "deliveryTypeName": "ONSITE, ONSITE",
+                "duration": 12,
+                "name": "1YR Battery (On-site Warranty)",
+                "description": "The battery included within this product is entitled to a 1 year on-site warranty.  Please note that this may differ from the warranty of the base product itself.",
+                "startDate": "2019-01-30",
+                "endDate": "2020-01-29",
+                "level": "BETTER"
+            }
+        ],
+        "upgradeWarranties": [
+            {
+                "sdf": "AR5",
+                "type": "UPGRADE",
+                "category": "MACHINE",
+                "deliveryType": "KYD",
+                "deliveryTypeName": "Keep Your Drive",
+                "duration": 60,
+                "name": "5Y Keep Your Drive ",
+                "description": " This product has a five year warranty service upgrade. The customer may elect to retain defective storage parts.",
+                "startDate": "2019-01-30",
+                "endDate": "2024-01-29",
+                "level": null
+            },
+            {
+                "sdf": "AS1",
+                "type": "UPGRADE",
+                "category": "MACHINE",
+                "deliveryType": "ONSITE",
+                "deliveryTypeName": "ONSITE, ONSITE",
+                "duration": 60,
+                "name": "5Y On-site, 9X5 ",
+                "description": "This product has a five year limited warranty which includes a warranty upgrade. This product is entitled to parts and labor and is entitled to onsite service. Service is available during normal business hours. Customers may call their local service center for more information.",
+                "startDate": "2019-01-30",
+                "endDate": "2024-01-29",
+                "level": "BETTER"
+            },
+            {
+                "sdf": "VRI",
+                "type": "UPGRADE",
+                "category": "MACHINE",
+                "deliveryType": "KYD",
+                "deliveryTypeName": "Keep Your Drive",
+                "duration": 36,
+                "name": "3Y Keep Your Drive",
+                "description": " This product has a three year warranty service upgrade. The customer may elect to retain defective storage parts.",
+                "startDate": "2019-01-30",
+                "endDate": "2022-01-29",
+                "level": null
+            },
+            {
+                "sdf": "UNK",
+                "type": "UPGRADE",
+                "category": "MACHINE",
+                "deliveryType": "PREMIER",
+                "deliveryTypeName": "PREMIER",
+                "duration": 12,
+                "name": "1Y On-site NBD + Premier Support",
+                "description": "This product has a one year limited warranty and is entitled to parts, labor and on-site repair service. Service is available Monday-Friday, except holidays, with a next business day response objective. Many parts can also be delivered to you using the Customer Replace.This machine is also entitled to Premier Support Service",
+                "startDate": "2019-01-30",
+                "endDate": "2020-01-29",
+                "level": "BEST"
+            }
+        ],
+        "contractWarranties": [],
+        "currentWarranty": {
+            "sdf": "AS1",
+            "type": "UPGRADE",
+            "category": "MACHINE",
+            "deliveryType": "ONSITE",
+            "deliveryTypeName": "ONSITE, ONSITE",
+            "duration": 60,
+            "name": "5Y On-site, 9X5 ",
+            "description": "This product has a five year limited warranty which includes a warranty upgrade. This product is entitled to parts and labor and is entitled to onsite service. Service is available during normal business hours. Customers may call their local service center for more information.",
+            "startDate": "2019-01-30",
+            "endDate": "2024-01-29",
+            "level": "BETTER"
+        },
+        "hasActiveContract": false,
+        "regularEndDate": null,
+        "hasSpecialWarranty": false,
+        "regularDeliveryType": null,
+        "warrantyRegistered": null,
+        "oow": false
+    }
+}

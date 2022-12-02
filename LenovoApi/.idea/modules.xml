@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LenovoApi.iml" filepath="$PROJECT_DIR$/LenovoApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LenovoApiApp/LenovoApiApp.iml" filepath="$PROJECT_DIR$/LenovoApiApp/LenovoApiApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LenovoApiLibrary/LenovoApiLibrary.iml" filepath="$PROJECT_DIR$/LenovoApiLibrary/LenovoApiLibrary.iml" />
+    </modules>
+  </component>
+</project>
