@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="265.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.warenkorb.WarenkorbController">
+   <children>
+      <TextField fx:id="produktNameInput" layoutX="140.0" layoutY="93.0" prefHeight="26.0" prefWidth="234.0" />
+      <Label layoutX="27.0" layoutY="97.0" text="Produkt (name):" />
+      <Label layoutX="27.0" layoutY="141.0" text="Anzahl:" />
+      <Button layoutX="140.0" layoutY="185.0" mnemonicParsing="false" onAction="#onButtonClick" text="Zum Warenkorb hinzufügen">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Button>
+      <Hyperlink layoutX="252.0" layoutY="28.0" onAction="#onLinkClick" text="Warenkorb anzeigen" />
+      <ImageView blendMode="COLOR_BURN" fitHeight="23.0" fitWidth="25.0" layoutX="226.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="data:image/png;base64,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" />
+         </image>
+      </ImageView>
+      <Label fx:id="produktCount" alignment="TOP_RIGHT" contentDisplay="TOP" layoutX="166.0" layoutY="31.0" prefHeight="17.0" prefWidth="53.0" text="(0)" />
+      <TextField fx:id="produktAnzahlInput" layoutX="140.0" layoutY="137.0" prefHeight="26.0" prefWidth="32.0" text="1" />
+   </children>
+</AnchorPane>
