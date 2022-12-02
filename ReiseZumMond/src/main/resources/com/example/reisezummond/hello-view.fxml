@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="264.0" prefWidth="302.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.reisezummond.MondController">
+    <children>
+        <Button layoutX="26.0" layoutY="163.0" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="26.0" prefWidth="240.0" text="Reisedauer berechnen" />
+        <TextField fx:id="geschwindigkeitInput" layoutX="163.0" layoutY="111.0" prefHeight="26.0" prefWidth="104.0" />
+        <Label layoutX="30.0" layoutY="115.0" text="Geschwindigkeit km/h" />
+      <RadioButton fx:id="days" layoutX="27.0" layoutY="73.0" mnemonicParsing="false" text="in Tagen">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+      </RadioButton>
+      <Label layoutX="27.0" layoutY="25.0" text="Reisedauer zum Mond berechnen" />
+      <RadioButton fx:id="hours" layoutX="122.0" layoutY="73.0" mnemonicParsing="false" text="in Stunden" toggleGroup="$group" />
+      <TextField fx:id="ausgabe" layoutX="157.0" layoutY="215.0" prefHeight="26.0" prefWidth="113.0" />
+      <Label layoutX="33.0" layoutY="219.0" text="Ausgabe Reisedauer" />
+    </children>
+</AnchorPane>
