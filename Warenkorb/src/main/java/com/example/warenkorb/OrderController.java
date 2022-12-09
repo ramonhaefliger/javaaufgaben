@@ -32,6 +32,8 @@ public class OrderController {
         item.setAmount(produktAnzahl);
         orderedItems.add(item);
         produktCount.setText("(" + orderedItems.size() + ")");
+        produktAnzahlInput.setText("1");
+        produktNameInput.setText("");
     }
 
     @FXML

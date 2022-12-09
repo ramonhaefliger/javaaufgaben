@@ -38,14 +38,4 @@ public class CartController {
         produktListe.setText(l);
     }
 
-//    @FXML
-//    protected void initialize() {
-//        System.out.println("3: " + orderedItems.size());
-//        String list = "";
-//        for (OrderItem orderedItem : orderedItems) {
-//            list += orderedItem.getProductName() + "\n";
-//        }
-//        produktListe.setText(list);
-//    }
-
 }
