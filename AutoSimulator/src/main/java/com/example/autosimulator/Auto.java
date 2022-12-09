@@ -2,7 +2,6 @@ package com.example.autosimulator;
 import java.io.File;
 
 public class Auto {
-
     private final String marke;
     private final int ps;
     private int aktuelleGeschwindigkeit;
@@ -52,14 +51,14 @@ public class Auto {
 
     public void gibGas() {
         int beschleinigung = ps / 20;
-        int maxGeschwindigkeit = (ps - ps / 4);
+        int maxGeschwindigkeit = (ps - ps / 6);
         if (istMotorGestartet  && aktuelleGeschwindigkeit < maxGeschwindigkeit) {
             if (aktuelleGeschwindigkeit + beschleinigung > maxGeschwindigkeit) {
                 aktuelleGeschwindigkeit = maxGeschwindigkeit;
             } else {
                 aktuelleGeschwindigkeit += beschleinigung;
             }
-            this.schalten();
+            schalten();
         }
     }
 
@@ -71,7 +70,7 @@ public class Auto {
         }
 
         if (istMotorGestartet) {
-            this.schalten();
+            schalten();
         }
     }
 
@@ -100,7 +99,7 @@ public class Auto {
 
     @Override
     public String toString() {
-        return this.marke;
+        return marke;
     }
 
 }

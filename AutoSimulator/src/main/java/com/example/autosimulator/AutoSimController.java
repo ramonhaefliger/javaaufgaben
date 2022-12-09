@@ -6,8 +6,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
-import java.io.File;
-import java.util.Objects;
+
+import java.lang.annotation.Native;
 
 public class AutoSimController {
 
