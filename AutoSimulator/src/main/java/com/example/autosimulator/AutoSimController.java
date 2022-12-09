@@ -6,7 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
-
+import java.io.File;
 import java.util.Objects;
 
 public class AutoSimController {
@@ -27,6 +27,11 @@ public class AutoSimController {
     @FXML
     private void onComboBoxAutosSelectionChanged() {
         auto = (Auto) comboBoxAutos.getValue();
+        if (auto.istMotorGestartet) {
+            motorStart.setText("Stop");
+        } else {
+            motorStart.setText("Start");
+        }
         psAnzeige.setText(auto.getPs() + " PS");
         kmhAnzeige.setText(auto.getAktuelleGeschwindigkeit() + "");
         gearAnzeige.setText(auto.getAktuellerGang() + "");
@@ -37,15 +42,6 @@ public class AutoSimController {
         auto.gibGas();
         kmhAnzeige.setText(auto.getAktuelleGeschwindigkeit() + "");
         gearAnzeige.setText(auto.getAktuellerGang() + "");
-    }
-
-    @FXML
-    public void showCars() {
-        ObservableList<Auto> autos = FXCollections.observableArrayList();
-        autos.add(new Auto("Porsche", 250));
-        autos.add(new Auto("Opel", 90));
-        autos.add(new Auto("Ferrari", 370));
-        comboBoxAutos.setItems(autos);
     }
 
     @FXML
@@ -64,11 +60,23 @@ public class AutoSimController {
     private void onMotorStart() {
         auto.starteMotor();
         gearAnzeige.setText(auto.getAktuellerGang() + "");
-        if(Objects.equals(motorStart.getText(), "Start")) {
+        if (auto.istMotorGestartet) {
             motorStart.setText("Stop");
         } else {
             motorStart.setText("Start");
         }
+    }
+
+    @FXML
+    private void initialize() {
+        ObservableList<Auto> autos = FXCollections.observableArrayList();
+        Auto porsche = new Auto("Porsche", 250);
+        Auto opel = new Auto("Opel", 90);
+        Auto ferrari = new Auto("Ferrari", 370);
+        autos.addAll(porsche, opel, ferrari);
+        comboBoxAutos.setItems(autos);
+        comboBoxAutos.setValue(porsche);
+        onComboBoxAutosSelectionChanged();
     }
 
 }

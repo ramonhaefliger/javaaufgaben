@@ -7,7 +7,7 @@ public class Auto {
     private final int ps;
     private int aktuelleGeschwindigkeit;
     private int aktuellerGang;
-    private boolean istMotorGestartet;
+    public boolean istMotorGestartet;
 
     public Auto(String marke, int ps) {
         this.marke = marke;
@@ -31,6 +31,12 @@ public class Auto {
     }
 
     public void starteMotor() {
+
+//        String file = "motor.mp3";
+//        Media sound = new Media(new File(file).toURI().toString());
+//        MediaPlayer mediaPlayer = new MediaPlayer(sound);
+//        mediaPlayer.play();
+
         aktuellerGang = 1;
         if (!istMotorGestartet) {
             istMotorGestartet = true;
@@ -46,7 +52,7 @@ public class Auto {
 
     public void gibGas() {
         int beschleinigung = ps / 20;
-        int maxGeschwindigkeit = ps - ps / 2;
+        int maxGeschwindigkeit = (ps - ps / 4);
         if (istMotorGestartet  && aktuelleGeschwindigkeit < maxGeschwindigkeit) {
             if (aktuelleGeschwindigkeit + beschleinigung > maxGeschwindigkeit) {
                 aktuelleGeschwindigkeit = maxGeschwindigkeit;
@@ -85,6 +91,16 @@ public class Auto {
         }
     }
 
-    public void hupe() { }
+    public void hupe() {
+//        String file = "hupe.mp3";
+//        Media sound = new Media(new File(file).toURI().toString());
+//        MediaPlayer mediaPlayer = new MediaPlayer(sound);
+//        mediaPlayer.play();
+    }
+
+    @Override
+    public String toString() {
+        return this.marke;
+    }
 
 }
