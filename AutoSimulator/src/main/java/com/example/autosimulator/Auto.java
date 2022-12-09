@@ -1,5 +1,4 @@
 package com.example.autosimulator;
-import java.io.File;
 
 public class Auto {
     private final String marke;
